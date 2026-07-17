@@ -1,0 +1,215 @@
+{
+  "exact_responses": {
+    "hello": "Hi there! \ud83d\udc4b",
+    "hi": "Hey! Good to see you.",
+    "help": "Try: hello, joke, riddle, motivate me, time, date, or tell me your name!"
+  },
+
+  "roman_urdu_markers": [
+    "hai", "ho", "kya", "kaise", "kaisi", "kaisay", "tum", "aap", "kar", "raha", "rahi", "rahay",
+    "nahi", "nahin", "haan", "mujhe", "mera", "meri", "tumhara", "tumhari", "sunao", "batao",
+    "kitne", "baje", "theek", "shukriya", "madad", "paheli", "hosla", "mausam", "bore", "kaha",
+    "kahan", "kab", "kyun", "kyu", "acha", "achha", "yaar", "bhai", "g", "ji", "pata", "karo",
+    "karain", "kero", "sunna", "chahiye", "walay", "wala", "wali", "abhi", "phir", "kuch",
+    "salam", "assalam", "shukria", "zabardast", "bohat", "boht"
+  ],
+
+  "giveup_words": [
+    "i don't know", "i dont know", "idk", "no idea", "not sure", "give up", "giveup",
+    "pata nahi", "mujhe nahi pata", "nahi pata", "tell me the answer", "just tell me", "answer batao"
+  ],
+
+  "intents": {
+    "greeting": {
+      "keywords": ["hello", "hi", "hey", "assalam", "assalamualaikum", "salam", "yo", "greetings", "hola", "good morning", "good evening", "good afternoon"],
+      "responses": {
+        "en": [
+          "Hey there! \ud83d\udc4b Great to see you.",
+          "Hello! How can I help you today?",
+          "Hi! I'm {bot_name}, your friendly rule-based assistant."
+        ],
+        "roman": [
+          "Walaikum assalam! Kaise ho? \ud83d\ude0a",
+          "Hey! Kya haal hai?",
+          "Salam! Main {bot_name} hoon, batao kya madad kar sakta hoon."
+        ]
+      }
+    },
+    "how_are_you": {
+      "keywords": ["how are you", "how're you", "how you doing", "what's up", "whats up", "kaise ho", "kaisi ho", "kya haal hai", "kya haal"],
+      "responses": {
+        "en": [
+          "I'm just a set of if-else rules, but I'm running smoothly! And you?",
+          "Doing great, thanks for asking! What about you?"
+        ],
+        "roman": [
+          "Main theek hoon, shukriya! Aap sunao?",
+          "Sab acha hai mera! Aap kaisay hain?"
+        ]
+      }
+    },
+    "name_query": {
+      "keywords": ["your name", "who are you", "what are you", "aap kon ho", "tumhara naam", "tumhara name"],
+      "responses": {
+        "en": [
+          "My name is {bot_name}."
+        ],
+        "roman": [
+          "Mera naam {bot_name} hai."
+        ]
+      }
+    },
+    "user_name_intro": {
+      "keywords": ["my name is", "i am ", "i'm ", "call me", "mera naam"],
+      "responses": {"en": [], "roman": []}
+    },
+    "thanks": {
+      "keywords": ["thank", "thanks", "appreciate", "shukriya", "shukria", "bohat shukriya"],
+      "responses": {
+        "en": ["You're very welcome! \ud83d\ude0a", "Anytime! Happy to help.", "No problem at all!"],
+        "roman": ["Koi baat nahi, khushi hui madad karke!", "Welcome! Jab bhi zaroorat ho, batana."]
+      }
+    },
+    "help": {
+      "keywords": ["help", "what can you do", "commands", "options", "capabilities", "madad"],
+      "responses": {
+        "en": [
+          "I can chat with you, tell jokes, share riddles, motivate you for study or work, tell the time/date, do simple math, and remember your name. Try saying 'joke', 'riddle', 'motivate me for study', or just say hi!"
+        ]
+      }
+    },
+    "joke": {
+      "keywords": ["joke", "make me laugh", "funny", "lateefa", "hansao"],
+      "responses": {
+        "en": [
+          "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+          "I told my computer I needed a break, and it said: 'No problem, I'll go to sleep.' 💤",
+          "Why did the if-statement break up with the loop? It just couldn't commit. 😄",
+          "Why do Python programmers wear glasses? Because they don't C. 🐍",
+          "I'd tell you a UDP joke, but you might not get it.",
+          "There are only 10 types of people in the world: those who understand binary and those who don't.",
+          "A SQL query walks into a bar, walks up to two tables and asks: 'Can I join you?'",
+          "Why did the developer go broke? Because he used up all his cache.",
+          "I changed my password to 'incorrect' so whenever I forget it, my computer tells me 'your password is incorrect.'",
+          "Why was the JavaScript developer sad? Because he didn't Node how to Express himself.",
+          "How many programmers does it take to change a light bulb? None — that's a hardware problem.",
+          "My code doesn't have bugs, it just develops random features."
+        ]
+      }
+    },
+    "riddle": {
+      "keywords": ["riddle", "puzzle", "brain teaser", "paheli"],
+      "responses": {"en": []}
+    },
+    "quote": {
+      "keywords": ["quote", "motivate me", "motivation", "inspire me", "hosla", "hosla afzai"],
+      "responses": {"en": []}
+    },
+    "time_query": { "keywords": ["time", "what time"], "responses": {"en": []} },
+    "date_query": { "keywords": ["date", "today's date", "what day"], "responses": {"en": []} },
+    "math_query": { "keywords": ["calculate", "plus", "minus", "times", "divided by"], "responses": {"en": []} },
+    "about_bot": {
+      "keywords": ["about you", "creator", "who made you", "who built you", "kisne banaya"],
+      "responses": {
+        "en": ["I was made by Areeba, a software developer."],
+        "roman": ["Mujhe Areeba, ek software developer, ne banaya hai."]
+      }
+    },
+    "compliment": {
+      "keywords": ["you are smart", "you're smart", "good bot", "you are amazing", "love this", "zabardast"],
+      "responses": {
+        "en": ["Aww, thank you! I'm just following well-designed rules though \ud83d\ude04", "That means a lot! Logic and clarity are my whole personality."],
+        "roman": ["Shukriya! Aap bhi kamal ho \ud83d\ude0a", "Bohat shukriya, aap ki baat se din ban gaya!"]
+      }
+    },
+    "insult": {
+      "keywords": ["stupid", "dumb", "useless", "bad bot"],
+      "responses": {
+        "en": ["That's alright \u2014 I'm a simple rule-based system, still learning to grow smarter!", "Ouch! I'll do my best to improve."],
+        "roman": ["Koi baat nahi, main abhi seekh raha hoon!"]
+      }
+    },
+    "weather": {
+      "keywords": ["weather", "temperature outside", "is it raining", "mausam"],
+      "responses": {
+        "en": ["I don't have live weather access in this version \u2014 I'm rule-based, not connected to the internet! But I'd guess... probably sunny somewhere. \u2600\ufe0f"],
+        "roman": ["Mujhe live mausam ka pata nahi chal sakta, main internet se connected nahi hoon abhi!"]
+      }
+    },
+    "small_talk_bored": {
+      "keywords": ["i'm bored", "im bored", "bored", "boring"],
+      "responses": {
+        "en": ["Let's fix that! Want a joke, a riddle, or some motivation?", "Bored? Say 'joke' or 'riddle' and let's have some fun."],
+        "roman": ["Chalo bore hona band karte hain! Joke sunun ya paheli?"]
+      }
+    },
+    "farewell_thanks": {
+      "keywords": ["good night", "shab bakhair", "take care"],
+      "responses": {
+        "en": ["Good night! Sleep well. \ud83c\udf19", "Take care! Talk soon."],
+        "roman": ["Shab bakhair! Acha sona.", "Apna khayal rakhna!"]
+      }
+    }
+  },
+
+  "riddles": [
+    {"question": "I have keys but no locks, space but no room, you can enter but not go inside. What am I?", "answer": "keyboard"},
+    {"question": "The more you take, the more you leave behind. What am I?", "answer": "footsteps"},
+    {"question": "What has to be broken before you can use it?", "answer": "egg"},
+    {"question": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?", "answer": "echo"},
+    {"question": "The more you remove from me, the bigger I get. What am I?", "answer": "hole"},
+    {"question": "What has hands but cannot clap?", "answer": "clock"},
+    {"question": "I'm tall when I'm young and short when I'm old. What am I?", "answer": "candle"},
+    {"question": "What has a head and a tail but no body?", "answer": "coin"},
+    {"question": "What gets wetter as it dries?", "answer": "towel"},
+    {"question": "What can travel around the world while staying in a corner?", "answer": "stamp"}
+  ],
+
+  "motivation": {
+    "study": [
+      "\"An investment in knowledge pays the best interest.\" \u2014 Benjamin Franklin. Keep going, this exam is temporary but the skill stays forever.",
+      "\"It always seems impossible until it's done.\" \u2014 Nelson Mandela. One page at a time, you've got this.",
+      "\"Success is the sum of small efforts, repeated day in and day out.\" \u2014 Robert Collier. Every study session counts.",
+      "\"The expert in anything was once a beginner.\" Keep showing up for your studies, even the hard chapters.",
+      "\"Don't watch the clock; do what it does. Keep going.\" \u2014 Sam Levenson. One more topic and you're closer to done."
+    ],
+    "work": [
+      "\"Do the best you can until you know better. Then when you know better, do better.\" \u2014 Maya Angelou. Keep pushing forward.",
+      "\"The only way to do great work is to love what you do.\" \u2014 Steve Jobs. Take a breath and get back to it \u2014 you're closer than you think.",
+      "\"Hard work beats talent when talent doesn't work hard.\" \u2014 Tim Notke. You've got this shift covered.",
+      "\"Opportunities don't happen, you create them.\" \u2014 Chris Grosser. Keep building.",
+      "\"Quality is not an act, it is a habit.\" \u2014 Aristotle. Small consistent effort wins."
+    ],
+    "general": [
+      "\"It always seems impossible until it's done.\" \u2014 Nelson Mandela.",
+      "\"Success is the sum of small efforts, repeated day in and day out.\" \u2014 Robert Collier.",
+      "\"Well done is better than well said.\" \u2014 Benjamin Franklin.",
+      "\"You don't have to be great to start, but you have to start to be great.\" \u2014 Zig Ziglar."
+    ],
+    "custom": [
+      "Whatever you're working through with {topic}, take it one step at a time \u2014 you're more capable than you think.",
+      "Keep going with {topic}. Progress isn't always visible day to day, but it adds up.",
+      "You've handled hard things before, and {topic} is no different \u2014 you've got this.",
+      "Small steps still count. Keep showing up for {topic}, even on the slow days."
+    ]
+  },
+
+  "fallback_responses": {
+    "en": [
+      "I don't understand that yet \u2014 I'm rule-based, so I only know what I've been taught! Try 'help'.",
+      "Hmm, that's outside my rule set. Could you rephrase, or type 'help' to see what I can do?",
+      "I'm not sure how to respond to that. My logic doesn't cover it yet!"
+    ],
+    "roman": [
+      "Mujhe yeh samajh nahi aaya \u2014 main rule-based hoon, sirf wahi jaanta hoon jo sikhaya gaya hai! 'help' likh kar dekho.",
+      "Yeh mere rules se bahar hai. Dobara try karo ya 'help' likho."
+    ]
+  },
+
+  "exit_responses": {
+    "en": ["Goodbye! It was great chatting with you. \ud83d\udc4b", "See you soon! Take care.", "Bye! Come back anytime."],
+    "roman": ["Allah Hafiz! Phir milte hain.", "Khuda hafiz, bohat maza aya baat kar ke!"]
+  },
+
+  "followup_words": ["another", "again", "more", "one more", "another one", "aur batao", "aur sunao", "aur"]
+}
