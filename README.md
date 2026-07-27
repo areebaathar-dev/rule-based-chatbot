@@ -66,6 +66,10 @@ Add a new topic by editing `intents.json` — no code changes needed:
 }
 ```
 
+## 📄 License
+
+This project is licensed under the MIT License.
+
 ## Author
 
 Areeba — BS Computer Science, NFC-IEFR Faisalabad
