@@ -77,7 +77,15 @@ Add a new topic by editing `intents.json` — no code changes needed:
 }
 ```
 
+<<<<<<< HEAD
 ---
+=======
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## Author
+>>>>>>> 6a43701f45cdd122fd45ca17c118104a57300ffc
 
 ## 📄 License
 
